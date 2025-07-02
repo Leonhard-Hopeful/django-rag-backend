@@ -1,0 +1,45 @@
+# --- Security: Never commit environment files ---
+.env
+.env.*
+
+# --- Python Virtual Environment ---
+# Ignore the entire virtual environment folder
+# (can be venv, env, .venv, etc.)
+venv/
+env/
+.venv/
+
+# --- Django specific ---
+# Ignore the local SQLite database
+db.sqlite3
+*.sqlite3
+
+# Ignore collected static files in development
+# In production, the hosting service (Heroku/Render) builds this
+staticfiles/
+
+# --- Python cache files ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- IDE / Editor Directories ---
+# This line is very important!
+.vscode/
+.idea/
+
+# --- OS generated files ---
+.DS_Store
+Thumbs.db
+
+# --- Log files ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Coverage reports ---
+.coverage
+.coverage.*
+htmlcov/
